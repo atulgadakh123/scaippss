@@ -23,6 +23,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        working-directory: backend
+
 
       - name: Docker build
         run: docker build -t atulgadakh/backend:latest .
