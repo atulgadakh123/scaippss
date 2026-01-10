@@ -8,7 +8,9 @@ RUN npm install
 COPY . .
 
 ENV DATABASE_URL="dummy"
-RUN npx prisma generate
+
+RUN chmod +x node_modules/.bin/prisma \
+ && npx prisma generate
 
 EXPOSE 5000
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
