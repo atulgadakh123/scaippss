@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20251128T093000Z
+DTEND:20251129T133000Z
+DTSTAMP:20251103T130419Z
+ORGANIZER;CN="MumbaiHacks":MAILTO:calendar-invite@lu.ma
+UID:evt-qlpkHI0du7wOiXq@events.lu.ma
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nikhi
+ lkandhare22@gmail.com;X-NUM-GUESTS=0:mailto:nikhilkandhare22@gmail.com
+SUMMARY:MumbaiHacks 2025 - Round 2 (in-person)
+DESCRIPTION:Get up-to-date information at: https://luma.com/event/evt-qlpk
+ HI0du7wOiXq?pk=g-XWsKGnrNioN5Bw6\n\nAddress:\nHall 1 , Bombay Exhibition C
+ entre Mumbai,Goregaon , Western Express highway, Mumbai.\nHall 1, Nesco, G
+ oregaon\nMumbai, Maharashtra\nIndia\n\nCongratulations - you’ve official
+ ly been selected to join us for MumbaiHacks 2025 Round 2 on ground! 🎊\n
+ Out of thousands of applications on Devfolio, you made it to Round 2 where
+  you will  be building, learning, and collaborating live in Mumbai 🚀\nB
+ efore you dive into 24 hours of non-stop energy, innovation, and fun, plea
+ se complete your on-ground registration below 👇\n\n✅ Step 1: Confirm 
+ Your Attendance\nThis form is only for selected participants.\nRegister us
+ ing the same email ID you used on Devfolio - this helps us verify your tea
+ m and confirm your participation.\n\n👥 Step 2: Team…\n\nHosted by Tec
+ h Entrepreneurs Association of Mumbai, MumbaiHacks ⠀ & Made in Mumbai
+LOCATION:Hall 1 , Bombay Exhibition Centre Mumbai,Goregaon , Western Expre
+ ss highway, Mumbai., Western Express Hwy, NESCO, Goregaon, Mumbai, Maharas
+ htra 400063, India
+GEO:19.1504328;72.85440369999999
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
