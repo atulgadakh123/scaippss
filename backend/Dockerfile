@@ -12,5 +12,5 @@ ENV DATABASE_URL="dummy"
 RUN chmod +x node_modules/.bin/prisma \
  && npx prisma generate
 
-EXPOSE 3000
+EXPOSE 5000
 CMD ["npm", "start"]
