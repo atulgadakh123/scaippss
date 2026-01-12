@@ -1,21 +1,21 @@
-# version: "3.9"
-
 services:
 
   backend:
     image: atulgadakh/scaippss-backend:latest
-
-    # build: ./
-    # container_name: scaips-backend
+    container_name: scaips-backend
     ports:
-         - "5000:3000"
+      - "5000:3000"
     env_file:
       - ./.env
     depends_on:
       - postgres
       - redis
     restart: always
-
+    environment:
+      DATABASE_URL: postgresql://postgres:1234@postgres:5432/scaips_local
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      NODE_ENV: production
 
   nginx:
     image: nginx:latest
@@ -27,10 +27,9 @@ services:
     depends_on:
       - backend
 
-
-
   postgres:
     image: postgres:15
+    container_name: scaips-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 1234
