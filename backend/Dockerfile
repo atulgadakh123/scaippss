@@ -2,15 +2,14 @@ FROM node:18
 
 WORKDIR /app
 
-# 1️⃣ Only package files
 COPY package*.json ./
 RUN npm install
 
-# 2️⃣ Copy source code (node_modules excluded by .dockerignore)
 COPY . .
 
-# 3️⃣ Generate prisma INSIDE container
-RUN npx prisma generate
+ENV NODE_ENV=production
 
-EXPOSE 5000
-CMD ["npm", "start"]
+EXPOSE 3000
+
+# ⚠️ Prisma build time ला नाही, runtime ला
+CMD ["sh", "-c", "rm -rf node_modules/.prisma && npx prisma generate && npm start"]
