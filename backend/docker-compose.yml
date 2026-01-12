@@ -3,7 +3,8 @@
 services:
 
   backend:
-    image: atulgadakh/scaips-backend:latest
+    image: atulgadakh/scaippss-backend:latest
+
     # build: ./
     # container_name: scaips-backend
     ports:
