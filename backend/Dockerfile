@@ -11,5 +11,5 @@ ENV NODE_ENV=production
 
 EXPOSE 3000
 
-# ⚠️ Prisma build time ला नाही, runtime ला
+# 🔥 KEY LINE: Windows prisma force delete + Linux generate
 CMD ["sh", "-c", "rm -rf node_modules/.prisma && npx prisma generate && npm start"]
